@@ -3,6 +3,8 @@
 require "thor"
 require "dip/run_vars"
 
+using ActiveSupportHashHelpers
+
 module Dip
   class CLI < Thor
     TOP_LEVEL_COMMANDS = %w[help version ls compose up stop down run provision ssh dns nginx console].freeze
